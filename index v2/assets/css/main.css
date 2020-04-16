@@ -381,6 +381,7 @@ li {
 html,
 body {
     height: 98.7%;
+    padding: .5rem;
 }
 
 html {
@@ -390,7 +391,7 @@ html {
 }
 
 body {
-    padding: 10;
+    /* padding: 10; */
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
