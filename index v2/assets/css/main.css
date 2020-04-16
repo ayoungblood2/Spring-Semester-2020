@@ -445,11 +445,11 @@ br {
 .Header-link {
     display: flex;
     flex: 0 0 auto;
-    min-height: 10.1%;
+    min-height: 10%;
     text-decoration: none;
     padding-left: var(--xsm-padding);
     padding-top: var(--xsm-padding);
-    padding-bottom: 5px;
+    padding-bottom: 3px;
     border: var(--thin-border);
     font-size: var(--sm-font-size);
 }
