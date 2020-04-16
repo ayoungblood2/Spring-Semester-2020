@@ -390,7 +390,7 @@ html {
 }
 
 body {
-    margin: 10;
+    padding: 10;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -398,7 +398,7 @@ body {
 }
 
 
-html:hover{
+html:hover {
     background-color: var(--hover-color);
 
 }
@@ -407,7 +407,7 @@ a {
     color: unset
 }
 
-br{
+br {
     line-height: .5;
 }
 
@@ -429,7 +429,7 @@ br{
     display: none;
 }
 
-.Header{
+.Header {
     -ms-overflow-style: none;
 }
 
@@ -586,11 +586,11 @@ br{
 .PageHeader {
     display: flex;
     flex-wrap: wrap;
-    height: 5%;
+    min-height: 5%;
     border: var(--thin-border);
     /* min-height: 8.5rem; */
     font-family: var(--secondary-font-family);
-    padding: var(--sm-padding);
+    /* padding: var(--xsm-padding); */
     margin: 1;
     background-color: var(--secondary-color)
 }
@@ -602,7 +602,7 @@ br{
 }
 
 .PageHeader--home {
-    padding: 0
+    padding: var(--xsm-padding);
 }
 
 .PageHeader--postDetail {
@@ -652,14 +652,14 @@ br{
 }
 
 .PageHeader-classInfo {
-    padding-left: var(--xsm-padding);
-    padding-top: var(--xsm-padding);
+    /* padding-left: var(--xsm-padding);
+    padding-top: var(--xsm-padding); */
     flex: 0 0 50%;
     font-size: var(--small-font-size);
     line-height: 1.5;
 }
 
-.PageHeader--link:hover{
+.PageHeader--link:hover {
     background-color: var(--hover-color)
 }
 
@@ -956,70 +956,79 @@ br{
     left: -100vw;
     pointer-events: none;
 }
-  
-.more{
+
+.more {
     position: relative;
     font-size: var(--small-font-size);
     padding: var(--sm-padding);
 }
-.more2{
+
+.more2 {
     position: relative;
     font-size: var(--small-font-size);
     padding: var(--sm-padding);
 }
-  ul.viewing-less {
-    width: inherit; 
-height: inherit;
-position: relative;}
 
-    ul.viewing-less .more {
-      display: none;
-      position: relative; }
+ul.viewing-less {
+    width: inherit;
+    height: inherit;
+    position: relative;
+}
 
-  
-  ul.viewing-more {
-    width: 500px; 
+ul.viewing-less .more {
+    display: none;
+    position: relative;
+}
+
+
+ul.viewing-more {
+    width: 500px;
     display: inline-block;
     position: relative;
 }
 
 ul#clients {
-    width: 250px; }
-  
-    span:hover+img {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        margin-top: -194px;
-        /* Half of the popups height */
-        margin-left: -190px;
-        /* Half of the popups width */
-        animation: bgfade 1s infinite;
+    width: 250px;
+}
+
+span:hover+img {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: -194px;
+    /* Half of the popups height */
+    margin-left: -190px;
+    /* Half of the popups width */
+    animation: bgfade 1s infinite;
+}
+
+img {
+    display: none;
+    width: 100%;
+    z-index: -1;
+    animation: bgfade 1s infinite;
+
+}
+
+@keyframes bgfade {
+    0% {
+        src: '/index v2/assets/core/Avery_Slang_BW.png';
     }
 
-    img {
-        display: none;
-        width: 100%;
-        z-index: -1;
-        animation: bgfade 1s infinite;
-
+    25% {
+        src: 'index v2/assets/core/Basic_Handmade_Mao_BW.png';
     }
 
-    @keyframes bgfade {
-        0% {
-        src:'/index v2/assets/core/Avery_Slang_BW.png';
-        }
-        25% {
-       src: 'index v2/assets/core/Basic_Handmade_Mao_BW.png';
-        }
-        50% {
+    50% {
         src: 'index v2/assets/core/COLLUDE_MC_BW.png';
-        }
-        75% {
+    }
+
+    75% {
         src: 'index v2/assets/core/Oxymoron_Print_Mao_BW.png';
-        }
-        100% {
+    }
+
+    100% {
         src: 'index v2/assets/core/Avery_Schadenfreude_BW.png';
-        }
-        }
+    }
+}
