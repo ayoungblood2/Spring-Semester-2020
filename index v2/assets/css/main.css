@@ -298,6 +298,16 @@ br {
     border-top: var(--thin-border);
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.Main::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.Main {
+    -ms-overflow-style: none;
+}
+
 @media (max-width: 950px) {
     .Main {
         flex: 0 0 100%;
