@@ -390,7 +390,7 @@ br {
 .PageHeader-classInfo {
     /* padding-left: var(--xsm-padding);
     padding-top: var(--xsm-padding); */
-    flex: 0 0 50%;
+    flex: 0 0 100%;
     font-size: var(--small-font-size);
     line-height: 1.5;
 }
@@ -688,7 +688,7 @@ br {
     position: fixed;
     font-size: var(--small-font-size);
     line-height: 1.3rem;
-    z-index: 0;
+    z-index: 1;
     left: -100vw;
     pointer-events: none;
 }
@@ -741,7 +741,7 @@ span:hover+img {
 img {
     display: none;
     width: 100%;
-    z-index: -100;
+    z-index: -1;
 
 }
 
@@ -753,7 +753,10 @@ img.image-box {
     background-color: var(--background-color);
 }
 
-img.page-header:after {
+.image-box:hover{
+    z-index: -100;
+}
+/* img.page-header:after {
     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/paper-pattern.png);
     animation: grain 8s steps(10) infinite;
     content: "";
@@ -808,4 +811,4 @@ img.page-header:after {
     90% {
         transform: translate(-10%, 10%)
     }
-}
+} */
