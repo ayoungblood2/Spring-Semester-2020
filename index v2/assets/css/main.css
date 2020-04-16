@@ -547,7 +547,9 @@ br {
 .Nav-link:hover {
     /* font-size: 30px; */
     /* transform: scale(1.5); */
+    background-color: #f86c3a;;
 }
+
 
 
 .TimeStamp {
@@ -757,7 +759,7 @@ br {
 }
 
 .PageContent--general {
-    padding: var(--sm-padding);
+    /* padding: var(--xsm-padding); */
     /* max-width: var(--max-body-width); */
     line-height: 1.5;
     font-family: var(--tertiary-font-family);
@@ -1042,12 +1044,13 @@ img {
   
   
 .webBox {
-    background-color: var(--background-color);
-    display: block;
-    height: 75%;
-    overflow-y: scroll;
+    /* background-color: var(--background-color); */
+    display: flex;
+    flex: 0  0 0;
+    width: 100%;
+    overflow: scroll;
     border: var(--thin-border);
-    padding: var(--xsm-padding)
+    padding: var(--xsm-padding);
 }
 
 /* .webBox:hover {
@@ -1055,7 +1058,7 @@ img {
     width: 100%;
     left: 50%;
     top: 50%;
-    padding-top: 0;
+    margin-bottom: 10;
     box-sizing: border-box;
     border: thin solid black;
     background-color: var(--background-color);
