@@ -293,8 +293,7 @@ br {
 .Main {
     flex: 0 0 75%;
     height: 100%;
-    overflow-x: scroll;
-    flex-direction: row;
+    overflow-y: scroll;
     border-left: var(--thin-border);
     border-top: var(--thin-border);
 }
