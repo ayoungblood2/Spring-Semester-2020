@@ -293,7 +293,8 @@ br {
 .Main {
     flex: 0 0 75%;
     height: 100%;
-    overflow-y: scroll;
+    overflow-x: scroll;
+    flex-direction: row;
     border-left: var(--thin-border);
     border-top: var(--thin-border);
 }
@@ -747,15 +748,17 @@ img {
 
 img.image-box {
     display: block;
-    width: 100%;
+    width: 99.9%;
     border: var(--thin-border);
     margin: 1;
     background-color: var(--background-color);
+    /* filter: grayscale(1); */
 }
 
-.image-box:hover{
+.image-box:hover {
     z-index: -100;
 }
+
 /* img.page-header:after {
     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/paper-pattern.png);
     animation: grain 8s steps(10) infinite;
