@@ -381,17 +381,16 @@ li {
 html,
 body {
     height: 98.7%;
-    padding: .5rem;
 }
 
 html {
     font-family: var(--primary-font-family);
     font-size: var(--base-font-size);
     background-color: var(--background-color);
+    padding: .5rem;
 }
 
 body {
-    /* padding: 10; */
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -401,7 +400,6 @@ body {
 
 html:hover {
     background-color: var(--hover-color);
-
 }
 
 a {
@@ -1001,35 +999,84 @@ span:hover+img {
     /* Half of the popups height */
     margin-left: -190px;
     /* Half of the popups width */
-    animation: bgfade 1s infinite;
 }
 
 img {
     display: none;
     width: 100%;
-    z-index: -1;
-    animation: bgfade 1s infinite;
-
+    z-index: -100;
 }
 
-@keyframes bgfade {
-    0% {
-        src: '/index v2/assets/core/Avery_Slang_BW.png';
-    }
 
-    25% {
-        src: 'index v2/assets/core/Basic_Handmade_Mao_BW.png';
-    }
+  img.page-header:after {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/paper-pattern.png);
+    animation: grain 8s steps(10) infinite;
+    content: "";
+    height: 300%;
+    left: -50%;
+    opacity: 0.3;
+    position: fixed;
+    top: -110%;
+    width: 300%;
+    z-index: -1;
+  }
+  
+  @keyframes grain {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(-15%, 5%) }
+    30% { transform:translate(7%, -25%) }
+    40% { transform:translate(-5%, 25%) }
+    50% { transform:translate(-15%, 10%) }
+    60% { transform:translate(15%, 0%) }
+    70% { transform:translate(0%, 15%) }
+    80% { transform:translate(3%, 35%) }
+    90% { transform:translate(-10%, 10%) }
+  }
+  
+  
+  
+.webBox {
+    background-color: var(--background-color);
+    flex: 0 0 100%;
+    display: flex;
+    height: 100%;
+    overflow-y: hidden;
+    border: var(--thin-border);
+}
 
-    50% {
-        src: 'index v2/assets/core/COLLUDE_MC_BW.png';
-    }
+/* .webBox:hover {
+    float: right;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    padding-top: 0;
+    box-sizing: border-box;
+    border: thin solid black;
+    background-color: var(--background-color);
+    resize: left;
+} */
 
-    75% {
-        src: 'index v2/assets/core/Oxymoron_Print_Mao_BW.png';
-    }
 
-    100% {
-        src: 'index v2/assets/core/Avery_Schadenfreude_BW.png';
-    }
+a.tab {
+    position: relative;
+    /* left: 50%; */
+    color: black;
+    text-decoration: none;
+    font-family: 'Favorit';
+    line-height: 1.5;
+    font-size: .5em;
+    text-align: center;
+}
+
+.webBox::-webkit-scrollbar {
+    display: none;
+}
+
+.wrap::-webkit-scrollbar {
+    display: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }

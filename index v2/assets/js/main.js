@@ -91,7 +91,13 @@ class TimeStamp {
     }
 
     render() {
-        this.el.innerHTML = `spring semester week ${this.weekDelta} -------------------------------------------------------------- ${this.currentDate}`
+        this.el.innerHTML = `
+        yale school of art --
+        graphic design --
+        preliminary year --
+        final reviews -- spring 2020 semester -- week ${this.weekDelta} --------------------------------------------------------------
+         ${this.currentDate}
+        `
     }
 
 }
