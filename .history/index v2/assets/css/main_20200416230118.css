@@ -279,7 +279,7 @@ br {
     content: ': ]';
     font-family: var(--tertiary-font-family);
     background-color: yellow;
-    padding: 50px;
+    padding: 100px;
     /* transform: scale(1.01); */
 
 }
