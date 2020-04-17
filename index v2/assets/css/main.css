@@ -736,12 +736,12 @@ span:hover+img {
     /* Half of the popups height */
     margin-left: -190px;
     /* Half of the popups width */
+    z-index: -1;
 }
 
 img {
     display: none;
     width: 100%;
-    z-index: -1;
 
 }
 
@@ -754,7 +754,7 @@ img.image-box {
     /* filter: grayscale(1); */
 }
 
-.image-box:hover {
+.image-box {
     z-index: -100;
 }
 
