@@ -17,6 +17,8 @@ if (randomColor == "#ffff00"){
 }
 
 
+document.title = titles[Math.floor(Math.random() * titles.length)];
+
 if (document.getElementById('svg') != null){
 
 document.getElementById("svg").setAttribute("viewBox" , "0 0 " + window.innerWidth + " " + window.innerHeight);
@@ -195,10 +197,13 @@ document.addEventListener("visibilitychange", function() {
         for (let activeLink of document.getElementsByClassName("active")){
             activeLink.classList.remove("active");
         }
-        document.title = "Avery Youngblood";
+        document.title = "Talia Cotton";
         document.getElementsByClassName("original")[0].classList.add("active");
         document.getElementsByTagName("body")[0].classList.remove("transition"); 
-    } 
+    } else {
+        // console.log("Browser tab is visible" + new Date())
+        document.title = titles[Math.floor(Math.random() * titles.length)];
+    }
 });
 
 

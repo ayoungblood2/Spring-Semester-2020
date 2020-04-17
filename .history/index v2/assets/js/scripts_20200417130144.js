@@ -3,6 +3,7 @@ let avgY = [];
 let previousCoords = [Math.random() * window.innerWidth, Math.random() * window.innerHeight];
 let strokeWidth = 65;
 let lines = 0;
+let titles = ["(ï¾‰â—•ãƒ®â—•)ï¾‰*:ï½¥ï¾Ÿâœ§", "(â˜žï¾Ÿâˆ€ï¾Ÿ)â˜ž", "à¼¼ ã¤ â—•_â—• à¼½ã¤", "(â–€Ì¿Ä¹Ì¯â–€Ì¿ Ì¿)", "á•¦(Ã’_Ã“Ë‡)á•¤", "â˜œ(Ëšâ–½Ëš)â˜ž", "â˜œ(âŒ’â–½âŒ’)â˜ž", "(ãƒŽà² ç›Šà² )ãƒŽå½¡â”»â”â”»"];
 let palette = ["#ff3030", "#ffff00", "#00b05b"];
 let randomColor = palette[Math.floor(Math.random() * palette.length)];
 
@@ -16,6 +17,8 @@ if (randomColor == "#ffff00"){
     document.getElementById("coords").style.color = 'black';
 }
 
+
+document.title = titles[Math.floor(Math.random() * titles.length)];
 
 if (document.getElementById('svg') != null){
 
@@ -195,10 +198,13 @@ document.addEventListener("visibilitychange", function() {
         for (let activeLink of document.getElementsByClassName("active")){
             activeLink.classList.remove("active");
         }
-        document.title = "Avery Youngblood";
+        document.title = "Talia Cotton";
         document.getElementsByClassName("original")[0].classList.add("active");
         document.getElementsByTagName("body")[0].classList.remove("transition"); 
-    } 
+    } else {
+        // console.log("Browser tab is visible" + new Date())
+        document.title = titles[Math.floor(Math.random() * titles.length)];
+    }
 });
 
 
@@ -228,13 +234,13 @@ function saveAs(uri, filename) {
 }
 
 
-// for (let viewMoreLink of document.getElementsByClassName("view-more")){
-//     viewMoreLink.addEventListener("click", function(e){
-//         e.preventDefault();
-//         this.classList.toggle("view-less");
-//         document.getElementById(this.dataset.target).classList.toggle("viewing-less");
-//     });
-// }
+for (let viewMoreLink of document.getElementsByClassName("view-more")){
+    viewMoreLink.addEventListener("click", function(e){
+        e.preventDefault();
+        this.classList.toggle("view-less");
+        document.getElementById(this.dataset.target).classList.toggle("viewing-less");
+    });
+}
 
 function saveImage(){
             let w = Math.max(document.documentElement.clientWidth, window.innerWidth);

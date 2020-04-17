@@ -3,6 +3,7 @@ let avgY = [];
 let previousCoords = [Math.random() * window.innerWidth, Math.random() * window.innerHeight];
 let strokeWidth = 65;
 let lines = 0;
+let titles = ["(ï¾‰â—•ãƒ®â—•)ï¾‰*:ï½¥ï¾Ÿâœ§", "(â˜žï¾Ÿâˆ€ï¾Ÿ)â˜ž", "à¼¼ ã¤ â—•_â—• à¼½ã¤", "(â–€Ì¿Ä¹Ì¯â–€Ì¿ Ì¿)", "á•¦(Ã’_Ã“Ë‡)á•¤", "â˜œ(Ëšâ–½Ëš)â˜ž", "â˜œ(âŒ’â–½âŒ’)â˜ž", "(ãƒŽà² ç›Šà² )ãƒŽå½¡â”»â”â”»"];
 let palette = ["#ff3030", "#ffff00", "#00b05b"];
 let randomColor = palette[Math.floor(Math.random() * palette.length)];
 
@@ -16,6 +17,8 @@ if (randomColor == "#ffff00"){
     document.getElementById("coords").style.color = 'black';
 }
 
+
+document.title = titles[Math.floor(Math.random() * titles.length)];
 
 if (document.getElementById('svg') != null){
 
@@ -104,49 +107,49 @@ document.onclick = function(e){
 
 
 
-// var btn = document.querySelector('button');
-// // var svg = document.querySelector('svg');
-// var svg = document.getElementById('svg');
-// var canvas = document.querySelector('canvas');
+var btn = document.querySelector('button');
+// var svg = document.querySelector('svg');
+var svg = document.getElementById('svg');
+var canvas = document.querySelector('canvas');
 
-// function triggerDownload (imgURI) {
-//   var evt = new MouseEvent('click', {
-//     view: window,
-//     bubbles: false,
-//     cancelable: true
-//   });
+function triggerDownload (imgURI) {
+  var evt = new MouseEvent('click', {
+    view: window,
+    bubbles: false,
+    cancelable: true
+  });
 
-//   var a = document.createElement('a');
-//   a.setAttribute('download', 'MY_COOL_IMAGE.png');
-//   a.setAttribute('href', imgURI);
-//   a.setAttribute('target', '_blank');
+  var a = document.createElement('a');
+  a.setAttribute('download', 'MY_COOL_IMAGE.png');
+  a.setAttribute('href', imgURI);
+  a.setAttribute('target', '_blank');
 
-//   a.dispatchEvent(evt);
-// }
+  a.dispatchEvent(evt);
+}
 
-// btn.addEventListener('click', function () {
-//   var canvas = document.getElementById('canvas');
-//   var ctx = canvas.getContext('2d');
-//   var data = (new XMLSerializer()).serializeToString(svg);
-//   var DOMURL = window.URL || window.webkitURL || window;
+btn.addEventListener('click', function () {
+  var canvas = document.getElementById('canvas');
+  var ctx = canvas.getContext('2d');
+  var data = (new XMLSerializer()).serializeToString(svg);
+  var DOMURL = window.URL || window.webkitURL || window;
 
-//   var img = new Image();
-//   var svgBlob = new Blob([data], {type: 'image/svg+xml;charset=utf-8'});
-//   var url = DOMURL.createObjectURL(svgBlob);
+  var img = new Image();
+  var svgBlob = new Blob([data], {type: 'image/svg+xml;charset=utf-8'});
+  var url = DOMURL.createObjectURL(svgBlob);
 
-//   img.onload = function () {
-//     ctx.drawImage(img, 0, 0);
-//     DOMURL.revokeObjectURL(url);
+  img.onload = function () {
+    ctx.drawImage(img, 0, 0);
+    DOMURL.revokeObjectURL(url);
 
-//     var imgURI = canvas
-//         .toDataURL('image/png')
-//         .replace('image/png', 'image/octet-stream');
+    var imgURI = canvas
+        .toDataURL('image/png')
+        .replace('image/png', 'image/octet-stream');
 
-//     triggerDownload(imgURI);
-//   };
+    triggerDownload(imgURI);
+  };
 
-//   img.src = url;
-// });
+  img.src = url;
+});
 
 
 
@@ -189,43 +192,7 @@ for (let anyLink of document.getElementsByTagName("a")){
 }
 
 
-document.addEventListener("visibilitychange", function() {
-    if (document.hidden){
-        // console.log("Browser tab is hidden" + new Date());
-        for (let activeLink of document.getElementsByClassName("active")){
-            activeLink.classList.remove("active");
-        }
-        document.title = "Avery Youngblood";
-        document.getElementsByClassName("original")[0].classList.add("active");
-        document.getElementsByTagName("body")[0].classList.remove("transition"); 
-    } 
-});
 
-
-function saveAs(uri, filename) {
-
-    var link = document.createElement('a');
-
-    if (typeof link.download === 'string') {
-
-        link.href = uri;
-        link.download = filename;
-
-        //Firefox requires the link to be in the body
-        document.body.appendChild(link);
-
-        //simulate click
-        link.click();
-
-        //remove the link when done
-        document.body.removeChild(link);
-
-    } else {
-
-        window.open(uri);
-
-    }
-}
 
 
 // for (let viewMoreLink of document.getElementsByClassName("view-more")){

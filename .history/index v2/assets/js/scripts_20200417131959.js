@@ -195,10 +195,12 @@ document.addEventListener("visibilitychange", function() {
         for (let activeLink of document.getElementsByClassName("active")){
             activeLink.classList.remove("active");
         }
-        document.title = "Avery Youngblood";
+        document.title = "Talia Cotton";
         document.getElementsByClassName("original")[0].classList.add("active");
         document.getElementsByTagName("body")[0].classList.remove("transition"); 
-    } 
+    } else {
+        console.log("Browser tab is visible" + new Date()
+    }
 });
 
 

@@ -17,6 +17,8 @@ if (randomColor == "#ffff00"){
 }
 
 
+document.title = titles[Math.floor(Math.random() * titles.length)];
+
 if (document.getElementById('svg') != null){
 
 document.getElementById("svg").setAttribute("viewBox" , "0 0 " + window.innerWidth + " " + window.innerHeight);
@@ -43,10 +45,6 @@ document.onmousemove = function(e){
     document.getElementById("coords").style.top = e.clientY + 10 + "px";
     document.getElementById("coords").style.left = e.clientX + 10 + "px";
 
-    // avgX.push(e.clientX);
-    // avgY.push(e.clientY);
-    // document.getElementById("avg").style.left = findAvg(avgX) + "px";
-    // document.getElementById("avg").style.top = findAvg(avgY) + "px";
 }
 
 document.onclick = function(e){
@@ -59,26 +57,9 @@ document.onclick = function(e){
             if (x==115){
                 saveImage();
             }
-            // console.log("The Unicode value is: " + x);
+
         }
-        // let newDiv = document.createElement("DIV");
-        // newDiv.classList.add("point");
-        // newDiv.style.left = e.clientX - 4 + "px";
-        // newDiv.style.top = e.clientY - 4 + "px";
-        // document.body.appendChild(newDiv);
-
-        // let newCoords = document.createElement("DIV");
-        // newCoords.classList.add("coords");
-        // newCoords.innerHTML = "("+e.clientX+","+e.clientY+")";
-        // newCoords.style.top = e.clientY + 10 + "px";
-        // newCoords.style.left = e.clientX + 10 + "px";
-        // document.body.appendChild(newCoords);
-
-        // console.log(lines);
-        // if(lines >= 10){
-        //     document.getElementById("svg").innerHTML = '';
-        // }
-
+    
         if (previousCoords.length > 0){
             let newLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
             newLine.setAttribute('x1', previousCoords[0]);
@@ -103,50 +84,6 @@ document.onclick = function(e){
 }
 
 
-
-// var btn = document.querySelector('button');
-// // var svg = document.querySelector('svg');
-// var svg = document.getElementById('svg');
-// var canvas = document.querySelector('canvas');
-
-// function triggerDownload (imgURI) {
-//   var evt = new MouseEvent('click', {
-//     view: window,
-//     bubbles: false,
-//     cancelable: true
-//   });
-
-//   var a = document.createElement('a');
-//   a.setAttribute('download', 'MY_COOL_IMAGE.png');
-//   a.setAttribute('href', imgURI);
-//   a.setAttribute('target', '_blank');
-
-//   a.dispatchEvent(evt);
-// }
-
-// btn.addEventListener('click', function () {
-//   var canvas = document.getElementById('canvas');
-//   var ctx = canvas.getContext('2d');
-//   var data = (new XMLSerializer()).serializeToString(svg);
-//   var DOMURL = window.URL || window.webkitURL || window;
-
-//   var img = new Image();
-//   var svgBlob = new Blob([data], {type: 'image/svg+xml;charset=utf-8'});
-//   var url = DOMURL.createObjectURL(svgBlob);
-
-//   img.onload = function () {
-//     ctx.drawImage(img, 0, 0);
-//     DOMURL.revokeObjectURL(url);
-
-//     var imgURI = canvas
-//         .toDataURL('image/png')
-//         .replace('image/png', 'image/octet-stream');
-
-//     triggerDownload(imgURI);
-//   };
-
-//   img.src = url;
-// });
 
 
 
@@ -189,43 +126,7 @@ for (let anyLink of document.getElementsByTagName("a")){
 }
 
 
-document.addEventListener("visibilitychange", function() {
-    if (document.hidden){
-        // console.log("Browser tab is hidden" + new Date());
-        for (let activeLink of document.getElementsByClassName("active")){
-            activeLink.classList.remove("active");
-        }
-        document.title = "Avery Youngblood";
-        document.getElementsByClassName("original")[0].classList.add("active");
-        document.getElementsByTagName("body")[0].classList.remove("transition"); 
-    } 
-});
 
-
-function saveAs(uri, filename) {
-
-    var link = document.createElement('a');
-
-    if (typeof link.download === 'string') {
-
-        link.href = uri;
-        link.download = filename;
-
-        //Firefox requires the link to be in the body
-        document.body.appendChild(link);
-
-        //simulate click
-        link.click();
-
-        //remove the link when done
-        document.body.removeChild(link);
-
-    } else {
-
-        window.open(uri);
-
-    }
-}
 
 
 // for (let viewMoreLink of document.getElementsByClassName("view-more")){
