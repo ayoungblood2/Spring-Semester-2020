@@ -730,12 +730,12 @@ ul#clients {
 
 span:hover+img {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    margin-top: -194px;
+    /* margin-top: -194px; */
     /* Half of the popups height */
-    margin-left: -190px;
+    /* margin-left: -190px; */
     /* Half of the popups width */
     z-index: -1;
 }
