@@ -283,6 +283,7 @@ br {
 
 .Nav-link:hover {
     /* font-size: 30px; */
+    /* transform: scale(1.5); */
     background-color: #f86c3a;
 }
 

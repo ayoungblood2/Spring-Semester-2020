@@ -272,18 +272,23 @@ br {
     border: var(--thin-border);
     padding: 5px;
     border-radius: 500px;
+    transition: transform 1s;
 }
 
 .Nav-link:hover::before {
     content: ': ]';
     font-family: var(--tertiary-font-family);
     background-color: yellow;
-    /* padding: 50px; */
+    padding: 50px;
+    transform: scale(1.01);
+
 }
 
 .Nav-link:hover {
     /* font-size: 30px; */
+    /* transform: scale(1.5); */
     background-color: #f86c3a;
+    ;
 }
 
 

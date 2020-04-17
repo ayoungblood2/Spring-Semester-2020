@@ -24,7 +24,7 @@ document.onmousemove = function(e){
 
 
 // for (let viewMoreLink of document.getElementsByClassName("view-more")){
-//     viewMoreLink.addEventListener("more", function(e){
+//     viewMoreLink.addEventListener("click", function(e){
 //         e.preventDefault();
 //         this.classList.toggle("view-less");
 //         document.getElementById(this.dataset.target).classList.toggle("viewing-less");
