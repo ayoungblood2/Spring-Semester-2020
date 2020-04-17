@@ -209,13 +209,12 @@ br {
     position: top;
     cursor: pointer;
     border: var(--thin-border);
-    height: 30px;
-    width: 35px;
+  height: 30%;
+  width: 30%;
     display: block;
     font-family: var(--secondary-font-family);
     font-size: var(--sm-font-size);
     background-color: var(--background-color);
-    border-radius: 5000px;
 
 }
 
@@ -241,7 +240,7 @@ br {
 
 .Nav-item {
     display: block;
-
+   
 }
 
 .Nav-item.is-active .Nav-link::before {

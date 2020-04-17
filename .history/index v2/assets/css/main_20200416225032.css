@@ -204,18 +204,16 @@ br {
 .Header-arrow {
     color: black;
     padding: var(--xsm-padding);
-    margin-right: var(--xsm-padding);
+    margin: 1;
     text-decoration: none;
     position: top;
     cursor: pointer;
     border: var(--thin-border);
-    height: 30px;
-    width: 35px;
+  height: 10%;
     display: block;
     font-family: var(--secondary-font-family);
     font-size: var(--sm-font-size);
     background-color: var(--background-color);
-    border-radius: 5000px;
 
 }
 
@@ -241,7 +239,7 @@ br {
 
 .Nav-item {
     display: block;
-
+   
 }
 
 .Nav-item.is-active .Nav-link::before {

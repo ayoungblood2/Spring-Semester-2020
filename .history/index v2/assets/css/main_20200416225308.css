@@ -209,8 +209,8 @@ br {
     position: top;
     cursor: pointer;
     border: var(--thin-border);
-    height: 30px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
     display: block;
     font-family: var(--secondary-font-family);
     font-size: var(--sm-font-size);
