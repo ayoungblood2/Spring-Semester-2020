@@ -137,7 +137,7 @@ br {
     border-top: var(--thin-border);
     border-right: var(--thin-border);
     border-left: var(--thin-border);
-    min-height: 100%;
+    max-height: 100%;
     font-family: var(--secondary-font-family);
     padding: 1;
     background-color: var(--secondary-color);
@@ -170,6 +170,10 @@ br {
     padding-bottom: 3px;
     border: var(--thin-border);
     font-size: var(--sm-font-size);
+    /* position: -webkit-sticky;
+    position: sticky;
+    top: 0; */
+    background-color: var(--background-color);
 }
 
 .Header-link:hover {
@@ -222,6 +226,7 @@ br {
 
 .Nav-item {
     display: block;
+   
 }
 
 .Nav-item.is-active .Nav-link::before {
@@ -696,14 +701,10 @@ br {
 .more {
     position: relative;
     font-size: var(--small-font-size);
+    line-height: 1.25;
     padding: var(--sm-padding);
 }
 
-.more2 {
-    position: relative;
-    font-size: var(--small-font-size);
-    padding: var(--sm-padding);
-}
 
 ul.viewing-less {
     width: inherit;
@@ -729,7 +730,7 @@ ul#clients {
 
 span:hover+img {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     margin-top: -194px;
