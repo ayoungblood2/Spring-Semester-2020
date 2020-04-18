@@ -49,58 +49,7 @@ document.onmousemove = function(e){
     // document.getElementById("avg").style.top = findAvg(avgY) + "px";
 }
 
-document.onclick = function(e){
-    if (e.target.tagName != 'A'){
 
-        document.getElementById("save").style.opacity = 1;
-
-        document.onkeypress = function(){
-            var x = event.which || event.keyCode;
-            if (x==115){
-                saveImage();
-            }
-            // console.log("The Unicode value is: " + x);
-        }
-        // let newDiv = document.createElement("DIV");
-        // newDiv.classList.add("point");
-        // newDiv.style.left = e.clientX - 4 + "px";
-        // newDiv.style.top = e.clientY - 4 + "px";
-        // document.body.appendChild(newDiv);
-
-        // let newCoords = document.createElement("DIV");
-        // newCoords.classList.add("coords");
-        // newCoords.innerHTML = "("+e.clientX+","+e.clientY+")";
-        // newCoords.style.top = e.clientY + 10 + "px";
-        // newCoords.style.left = e.clientX + 10 + "px";
-        // document.body.appendChild(newCoords);
-
-        // console.log(lines);
-        // if(lines >= 10){
-        //     document.getElementById("svg").innerHTML = '';
-        // }
-
-        if (previousCoords.length > 0){
-            let newLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
-            newLine.setAttribute('x1', previousCoords[0]);
-            newLine.setAttribute('y1', previousCoords[1]);
-            newLine.setAttribute('x2', e.clientX);
-            newLine.setAttribute('y2', e.clientY);
-            newLine.style.strokeWidth = strokeWidth;
-            newLine.style.stroke = randomColor;
-            document.getElementById("svg").appendChild(newLine);
-        }
-
-        previousCoords = [e.clientX, e.clientY]; 
-        if (lines >= 9){
-            document.getElementById("svg").innerHTML = '';
-            lines = 1;
-            strokeWidth = 65;
-        } else {
-            lines++;
-        }
-        strokeWidth +=22;
-    }
-}
 
 
 
@@ -150,56 +99,30 @@ document.onclick = function(e){
 
 
 
+//UNCOMMENT: for descriptions to work & COMMENT OUT: for links to work
 
-for (let anyLink of document.getElementsByTagName("a")){
-    anyLink.onclick = function(e){
-        e.preventDefault();  
-        if (e.srcElement.id == "save"){
-            saveImage();
-        } else if (e.srcElement.classList.contains("collapse") ){
-            let imagesDivId = this.getAttribute("data-target");
-            this.classList.toggle("show-minus");
-            document.getElementById(imagesDivId).classList.toggle("hide");
-        } else if (e.srcElement.classList.contains("view-more") ){
-            this.classList.toggle("view-less");
-            document.getElementById(this.dataset.target).classList.toggle("viewing-less");
-        } else {
-            document.getElementsByClassName("active")[0].classList.remove("active");
-            if (this.parentElement.classList.contains("nav") || this.parentElement.classList.contains("footer")){
-                document.getElementsByTagName("body")[0].classList.add("transition"); 
-            }    
-            this.classList.add("active");            // prevent default anchor behavior
-            var goTo = this.getAttribute("href"); // store anchor href
-            let _this = this;
-            // do something while timeOut ticks ... 
-
-            setTimeout(function(){
-                // window.location = goTo;
-                if (_this.getAttribute("target") == "_blank"){
-                    window.open(
-                        goTo,
-                        '_blank' // <- This is what makes it open in a new window.
-                    );
-                } else {
-                    window.location = goTo;
-                }
-            }, 800); 
-        }
-    }
-}
+// for (let anyLink of document.getElementsByTagName("a")){
+//     anyLink.onclick = function(e){
+//         e.preventDefault();  
+//         if (e.srcElement.id == "save"){
+//             saveImage();
+//         } else if (e.srcElement.classList.contains("collapse") ){
+//             let imagesDivId = this.getAttribute("data-target");
+//             this.classList.toggle("show-minus");
+//             document.getElementById(imagesDivId).classList.toggle("hide");
+//         } else if (e.srcElement.classList.contains("view-more") ){
+//             this.classList.toggle("view-less");
+//             document.getElementById(this.dataset.target).classList.toggle("viewing-less");
+//         } 
+//             if (this.parentElement.classList.contains("nav") || this.parentElement.classList.contains("footer")){
+//                 document.getElementsByTagName("body")[0].classList.add("transition"); 
+//             }    
+           
+//     }}
 
 
-document.addEventListener("visibilitychange", function() {
-    if (document.hidden){
-        // console.log("Browser tab is hidden" + new Date());
-        for (let activeLink of document.getElementsByClassName("active")){
-            activeLink.classList.remove("active");
-        }
-        document.title = "Avery Youngblood";
-        document.getElementsByClassName("original")[0].classList.add("active");
-        document.getElementsByTagName("body")[0].classList.remove("transition"); 
-    } 
-});
+
+
 
 
 function saveAs(uri, filename) {
