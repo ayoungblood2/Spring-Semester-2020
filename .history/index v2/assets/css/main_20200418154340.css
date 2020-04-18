@@ -416,6 +416,7 @@ br {
     background-color: var(--background-color);
     font-size: var(--small-font-size);
     line-height: 1.5;
+    min-height: 5%;
     border: var(--thin-border);
     font-family: var(--secondary-font-family);
     margin: 1;

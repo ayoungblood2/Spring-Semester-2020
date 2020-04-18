@@ -416,9 +416,14 @@ br {
     background-color: var(--background-color);
     font-size: var(--small-font-size);
     line-height: 1.5;
+    min-height: 5%;
     border: var(--thin-border);
     font-family: var(--secondary-font-family);
     margin: 1;
+    margin-top: 10;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     padding: 1;
   }
   
@@ -427,9 +432,6 @@ br {
     margin: 1;
     background-color: var(--background-color);
     border: var(--thin-border);
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
   }
 
 .PageHeader--link:hover {
