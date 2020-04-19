@@ -28,6 +28,131 @@
         url('/index v2/assets/fonts/Ekstra/gtfekstratrial-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ekstra';
+    src: url('/index v2/assets/fonts/Ekstra/gtfekstratrial-regular-webfont.woff2') format('woff2'),
+        url('/index v2/assets/fonts/Ekstra/gtfekstratrial-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'gtf_ekstra_trialbold';
+    src: url('/index v2/assets/fonts/Ekstra/gtfekstratrial-bold-webfont.woff2') format('woff2'),
+         url('/index v2/assets/fonts/Ekstra/gtfekstratrial-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gtf_ekstra_trialbold_italic';
+    src: url('/index v2/assets/fonts/Ekstra/gtfekstratrial-bolditalic-webfont.woff2') format('woff2'),
+         url('/index v2/assets/fonts/Ekstra/gtfekstratrial-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gtf_ekstra_triallight';
+    src: url('/index v2/assets/fonts/Ekstra/gtfekstratrial-light-webfont.woff2') format('woff2'),
+         url('/index v2/assets/fonts/Ekstra/gtfekstratrial-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gtf_ekstra_triallight_italic';
+    src: url('/index v2/assets/fonts/Ekstra/gtfekstratrial-lightitalic-webfont.woff2') format('woff2'),
+         url('/index v2/assets/fonts/Ekstra/gtfekstratrial-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gtf_ekstra_trialmedium';
+    src: url('/index v2/assets/fonts/Ekstra/gtfekstratrial-medium-webfont.woff2') format('woff2'),
+         url('/index v2/assets/fonts/Ekstra/gtfekstratrial-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gtf_ekstra_trialmedium_italic';
+    src: url('/index v2/assets/fonts/Ekstra/gtfekstratrial-mediumitalic-webfont.woff2') format('woff2'),
+         url('/index v2/assets/fonts/Ekstra/gtfekstratrial-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gtf_ekstra_trialregular';
+    src: url('/index v2/assets/fonts/Ekstra/gtfekstratrial-regular-webfont.woff2') format('woff2'),
+         url('/index v2/assets/fonts/Ekstra/gtfekstratrial-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gtf_ekstra_trialRgIt';
+    src: url('/index v2/assets/fonts/Ekstra/gtfekstratrial-regularitalic-webfont.woff2') format('woff2'),
+         url('/index v2/assets/fonts/Ekstra/gtfekstratrial-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gtf_ekstra_trialsemi_bold';
+    src: url('/index v2/assets/fonts/Ekstra/gtfekstratrial-semibold-webfont.woff2') format('woff2'),
+         url('/index v2/assets/fonts/Ekstra/gtfekstratrial-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gtf_ekstra_trialSBdIt';
+    src: url('/index v2/assets/fonts/Ekstra/gtfekstratrial-semibolditalic-webfont.woff2') format('woff2'),
+         url('/index v2/assets/fonts/Ekstra/gtfekstratrial-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
@@ -47,7 +172,7 @@
     --h4-font: normal 1rem Arial, sans-serif;
     --primary-font-family: Neue Machina, monospace;
     --light-font-family: neue_machinalight;
-    --bold-font-family: neue_machinaultrabold;
+    --bold-font-family: gtf_ekstra_trialsemi_bold;
     --tertiary-font-family: Ekstra;
     --secondary-font-family: Neue Machina, monospace;
     --primary-color: #000;
@@ -114,11 +239,11 @@ body {
 
 }
 
-
+/* 
 html:hover {
-    /* background-color: var(--hover-color); */
+    background-color: var(--hover-color);
 
-}
+} */
 
 a {
     color: unset
@@ -126,12 +251,6 @@ a {
 
 br {
     line-height: .5;
-}
-
-.Main:hover {
-
-    background-color: yellow;
-    /* z-index: -100; */
 }
 
 .Header {
@@ -291,6 +410,14 @@ br {
     background-color: yellow;
 }
 
+.Nav-link-2:hover::before{
+background-color: var(--background-color);
+content: ': [';
+}
+.Nav-link-2:hover{
+    background-color: var(--background-color);
+    }
+
 .Nav-link::before {
     content: ': [';
     display: inline-block;
@@ -342,6 +469,10 @@ br {
     overflow-y: scroll;
     border-left: var(--thin-border);
     border-top: var(--thin-border);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -450,7 +581,7 @@ br {
     border: var(--thin-border);
     font-family: var(--tertiary-font-family);
     margin: 1;
-    padding: var(--xsm-padding);
+    /* padding: var(--xsm-padding); */
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -460,6 +591,7 @@ br {
     background-color: var(--link-color);
     color: var(--background-color);
     border-color: var(--background-color);
+    
   }
   
   .grid-item {
@@ -487,7 +619,7 @@ br {
     border: var(--thin-border);
     font-family: var(--tertiary-font-family);
     margin: 1;
-    padding: var(--xsm-padding);
+    /* padding: var(--xsm-padding); */
   }
 
   .grid-item-2 {
@@ -505,13 +637,18 @@ br {
     grid-column: 1 / span 3;
   }
 
-  
+
 
 .PageHeader--link:hover {
     background-color: var(--hover-color);
-    padding: 2;
+    /* padding: 2; */
     color: black;
 }
+
+.PageHeader--link--2 {
+    text-decoration: none;
+}
+
 
 @media (max-width: 950px) {
     .PageHeader-classInfo {
