@@ -285,7 +285,7 @@ br {
     font-weight: 100;
     font-family: var(--tertiary-font-family);
     border: var(--thin-border);
-    padding: 50px;
+    padding: 5px;
     border-radius: 500px;
     content: ': ]';
     background-color: yellow;
