@@ -655,22 +655,6 @@ content: ': [';
     
   }
 
-  .grid-container-4 {
-    display: grid;
-    grid-template-columns: auto;
-    background-color: var(--link-color);
-    font-size: var(--sm-font-size);
-    line-height: 1.5;
-    border: var(--thin-border);
-    font-family: var(--tertiary-font-family);
-    margin: 1;
-    padding: var(--xsm-padding);
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    grid-gap: var(--xsm-padding);
-  }
-
 
   .item-header {
     grid-column: 1 / span 1;
