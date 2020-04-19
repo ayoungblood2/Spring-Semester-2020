@@ -607,9 +607,7 @@ content: ': [';
     padding: var(--xsm-padding);
     margin: 1;
     border: var(--thin-border);
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+   
     color: black;
   }
 

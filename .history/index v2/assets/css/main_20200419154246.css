@@ -613,12 +613,6 @@ content: ': [';
     color: black;
   }
 
-  .sticky-box{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-  }
-
 
   .grid-container-2 {
     display: grid;

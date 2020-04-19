@@ -614,6 +614,7 @@ content: ': [';
   }
 
   .sticky-box{
+      display: grid;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -631,7 +632,6 @@ content: ': [';
     margin: 1;
     grid-gap: var(--xsm-padding);
     padding: var(--xsm-padding);
-    
   }
 
   .grid-item-2 {

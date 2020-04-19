@@ -613,12 +613,6 @@ content: ': [';
     color: black;
   }
 
-  .sticky-box{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-  }
-
 
   .grid-container-2 {
     display: grid;
@@ -631,7 +625,6 @@ content: ': [';
     margin: 1;
     grid-gap: var(--xsm-padding);
     padding: var(--xsm-padding);
-    
   }
 
   .grid-item-2 {

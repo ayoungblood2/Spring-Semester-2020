@@ -636,9 +636,16 @@ content: ': [';
 
   .grid-item-2 {
     font-family: var(--tertiary-font-family);
-    display: grid;
-    grid-template-columns: auto auto auto;
+    font-size: var(--sm-font-size);
+    line-height: 1.5;
+    background-color: var(--background-color);
+    padding: var(--xsm-padding);
+    margin: 1;
     border: var(--thin-border);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    color: black;
   }
 
   .item-header {

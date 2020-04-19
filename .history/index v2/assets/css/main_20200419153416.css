@@ -631,7 +631,6 @@ content: ': [';
     margin: 1;
     grid-gap: var(--xsm-padding);
     padding: var(--xsm-padding);
-    
   }
 
   .grid-item-2 {
