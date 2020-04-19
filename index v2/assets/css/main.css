@@ -499,7 +499,7 @@ content: ': [';
 .PageHeader {
     display: flex;
     flex-wrap: wrap;
-    min-height: 5%;
+    /* min-height: 5%; */
     border: var(--thin-border);
     /* min-height: 8.5rem; */
     font-family: var(--secondary-font-family);
