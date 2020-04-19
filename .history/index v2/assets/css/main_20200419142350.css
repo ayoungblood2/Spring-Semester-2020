@@ -297,10 +297,9 @@ br {
     padding-bottom: 3px;
     border: var(--thin-border);
     font-size: var(--sm-font-size);
-    position: -webkit-sticky;
+    /* position: -webkit-sticky;
     position: sticky;
-    top: 0;
-    color: black;
+    top: 0; */
     background-color: var(--background-color);
 }
 
@@ -313,6 +312,7 @@ br {
     .Header-link {
         min-height: initial;
         background-color: var(--hover-color);
+        color: var(--background-color)
     }
 }
 

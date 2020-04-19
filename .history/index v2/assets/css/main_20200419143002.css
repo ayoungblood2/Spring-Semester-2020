@@ -301,11 +301,11 @@ br {
     position: sticky;
     top: 0;
     color: black;
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
 }
 
 .Header-link:hover {
-    background-color: var(--hover-color);
+    /* background-color: var(--hover-color); */
     color: black;
 }
 
@@ -313,6 +313,7 @@ br {
     .Header-link {
         min-height: initial;
         background-color: var(--hover-color);
+        /* color: var(--background-color) */
     }
 }
 

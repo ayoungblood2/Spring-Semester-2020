@@ -313,6 +313,7 @@ br {
     .Header-link {
         min-height: initial;
         background-color: var(--hover-color);
+        color: var(--background-color)
     }
 }
 
