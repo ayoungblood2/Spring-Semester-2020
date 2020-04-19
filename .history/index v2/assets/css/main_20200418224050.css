@@ -128,10 +128,13 @@ br {
     line-height: .5;
 }
 
-.Main:hover {
-
+.Main {
+    flex: 0 0 75%;
+    height: 100%;
+    overflow-y: scroll;
+    border-left: var(--thin-border);
+    border-top: var(--thin-border);
     background-color: yellow;
-    /* z-index: -100; */
 }
 
 .Header {
@@ -847,8 +850,6 @@ span:hover+img {
     margin-left: -190px;
     /* Half of the popups width */
     z-index: -1;
-    background-color: yellow;
-    padding: 10;
 }
 
 img {

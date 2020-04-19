@@ -116,7 +116,7 @@ body {
 
 
 html:hover {
-    /* background-color: var(--hover-color); */
+    background-color: var(--hover-color);
 
 }
 
@@ -128,11 +128,6 @@ br {
     line-height: .5;
 }
 
-.Main:hover {
-
-    background-color: yellow;
-    /* z-index: -100; */
-}
 
 .Header {
     flex: 0 0 25%;
@@ -847,8 +842,6 @@ span:hover+img {
     margin-left: -190px;
     /* Half of the popups width */
     z-index: -1;
-    background-color: yellow;
-    padding: 10;
 }
 
 img {

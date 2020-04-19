@@ -848,7 +848,6 @@ span:hover+img {
     /* Half of the popups width */
     z-index: -1;
     background-color: yellow;
-    padding: 10;
 }
 
 img {

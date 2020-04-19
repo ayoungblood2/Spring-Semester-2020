@@ -115,9 +115,9 @@ body {
 }
 
 
-html:hover {
-    /* background-color: var(--hover-color); */
-
+body:hover {
+    background-color: var(--hover-color);
+    z-index: -1;
 }
 
 a {
@@ -128,11 +128,6 @@ br {
     line-height: .5;
 }
 
-.Main:hover {
-
-    background-color: yellow;
-    /* z-index: -100; */
-}
 
 .Header {
     flex: 0 0 25%;
@@ -847,8 +842,6 @@ span:hover+img {
     margin-left: -190px;
     /* Half of the popups width */
     z-index: -1;
-    background-color: yellow;
-    padding: 10;
 }
 
 img {
@@ -869,3 +862,60 @@ img.image-box {
 .image-box {
     z-index: -100;
 }
+
+/* img.page-header:after {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/paper-pattern.png);
+    animation: grain 8s steps(10) infinite;
+    content: "";
+    height: 300%;
+    left: -50%;
+    opacity: 0.3;
+    position: fixed;
+    top: -110%;
+    width: 300%;
+    z-index: -1;
+}
+
+@keyframes grain {
+
+    0%,
+    100% {
+        transform: translate(0, 0)
+    }
+
+    10% {
+        transform: translate(-5%, -10%)
+    }
+
+    20% {
+        transform: translate(-15%, 5%)
+    }
+
+    30% {
+        transform: translate(7%, -25%)
+    }
+
+    40% {
+        transform: translate(-5%, 25%)
+    }
+
+    50% {
+        transform: translate(-15%, 10%)
+    }
+
+    60% {
+        transform: translate(15%, 0%)
+    }
+
+    70% {
+        transform: translate(0%, 15%)
+    }
+
+    80% {
+        transform: translate(3%, 35%)
+    }
+
+    90% {
+        transform: translate(-10%, 10%)
+    }
+} */
