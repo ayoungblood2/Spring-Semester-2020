@@ -505,22 +505,7 @@ br {
     border: var(--thin-border);
     /* min-height: 8.5rem; */
     font-family: var(--secondary-font-family);
-    padding: var(--xsm-padding);
-    margin-top: 1;
-    background-color: var(--secondary-color);
-    /* position: -webkit-sticky; */
-    position: fixed sticky;
-    /* top: 0; */
-}
-
-.PageHeader-2 {
-    display: flex;
-    flex-wrap: wrap;
-    /* min-height: 5%; */
-    border: var(--thin-border);
-    /* min-height: 8.5rem; */
-    font-family: var(--secondary-font-family);
-    padding: var(--xsm-padding);
+    /* padding: var(--xsm-padding); */
     margin: 1;
     background-color: var(--secondary-color);
     /* position: -webkit-sticky; */
