@@ -1038,7 +1038,8 @@ span:hover+img {
     margin-left: -190px;
     /* Half of the popups width */
     z-index: -1;
-    border: 20px solid var(--hover-color);
+    border: 20px;
+    border-color: var(--hover-color);
 }
 
 img {
