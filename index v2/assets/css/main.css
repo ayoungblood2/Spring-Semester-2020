@@ -585,6 +585,7 @@ content: ': [';
     border: var(--thin-border);
     font-family: var(--tertiary-font-family);
     margin: 1;
+    padding: 1;
     /* padding: var(--xsm-padding); */
     position: -webkit-sticky;
     position: sticky;
@@ -629,8 +630,8 @@ content: ': [';
     border: var(--thin-border);
     font-family: var(--tertiary-font-family);
     margin: 1;
-    /* grid-gap: var(--xsm-padding); */
-    /* padding: var(--xsm-padding); */
+    grid-gap: var(--xsm-padding);
+    padding: var(--xsm-padding);
     
   }
 
@@ -650,8 +651,8 @@ content: ': [';
     border: var(--thin-border);
     font-family: var(--tertiary-font-family);
     margin: 1;
-    /* grid-gap: var(--xsm-padding); */
-    /* padding: var(--xsm-padding); */
+    grid-gap: var(--xsm-padding);
+    padding: var(--xsm-padding);
     
   }
 
