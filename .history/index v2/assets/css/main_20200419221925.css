@@ -476,8 +476,7 @@ content: ': [';
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-padding-left: 1;
-padding-right: 1;
+margin: 1;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

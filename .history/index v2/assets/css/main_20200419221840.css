@@ -476,8 +476,7 @@ content: ': [';
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-padding-left: 1;
-padding-right: 1;
+
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -570,8 +569,8 @@ padding-right: 1;
 }
 
 .PageHeader-classInfo {
-    /* padding-left: var(--xsm-padding);
-    padding-top: var(--xsm-padding); */
+    padding-left: var(--xsm-padding);
+    padding-top: var(--xsm-padding);
     flex: 0 0 100%;
     font-size: var(--small-font-size);
     line-height: 1.5;
