@@ -230,10 +230,10 @@ html {
     font-size: var(--base-font-size);
     background-color: var(--hover-color);
     /* padding: .5rem; */
-    border-top: solid var(--background-color) .5rem;
+    /* border-top: solid var(--background-color) .5rem;
     border-left: solid var(--background-color) .5rem;
     border-right: solid var(--background-color) .5rem;
-    border-bottom: solid var(--background-color) 3rem;
+    border-bottom: solid var(--background-color) 3rem; */
 }
 
 body {
@@ -1097,6 +1097,7 @@ span:hover+img {
 img {
     display: none;
     width: 100%;
+    z-index: -1;
 }
 
 img.image-box {
@@ -1106,6 +1107,7 @@ img.image-box {
     margin: 1;
     background-color: var(--background-color);
     /* filter: grayscale(1); */
+    z-index: -1;
 }
 
 .image-box {
