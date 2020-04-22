@@ -222,7 +222,7 @@ li {
 
 html,
 body {
-    height: 100%;
+    height: 98%;
 }
 
 html {
@@ -230,10 +230,7 @@ html {
     font-size: var(--base-font-size);
     background-color: var(--hover-color);
     /* padding: .5rem; */
-    border-top: solid var(--background-color) .5rem;
-    border-left: solid var(--background-color) .5rem;
-    border-right: solid var(--background-color) .5rem;
-    border-bottom: solid var(--background-color) 2.5rem;
+    border: solid var(--background-color) .5rem;
 }
 
 body {
@@ -300,7 +297,7 @@ br {
     border-left: var(--thin-border);
     max-height: 100%;
     font-family: var(--secondary-font-family);
-    padding: 1;
+    /* padding: 1; */
     background-color: var(--secondary-color);
     overflow-y: scroll;
    

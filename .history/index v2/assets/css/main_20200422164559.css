@@ -233,7 +233,7 @@ html {
     border-top: solid var(--background-color) .5rem;
     border-left: solid var(--background-color) .5rem;
     border-right: solid var(--background-color) .5rem;
-    border-bottom: solid var(--background-color) 2.5rem;
+    border-bottom: solid var(--background-color) 3rem;
 }
 
 body {

@@ -222,18 +222,15 @@ li {
 
 html,
 body {
-    height: 100%;
+    height: 98%;
 }
 
 html {
     font-family: var(--primary-font-family);
     font-size: var(--base-font-size);
     background-color: var(--hover-color);
-    /* padding: .5rem; */
-    border-top: solid var(--background-color) .5rem;
-    border-left: solid var(--background-color) .5rem;
-    border-right: solid var(--background-color) .5rem;
-    border-bottom: solid var(--background-color) 2.5rem;
+    padding: .5rem;
+    border: solid black 200px;
 }
 
 body {
