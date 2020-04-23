@@ -257,22 +257,14 @@ br {
     line-height: .5;
 }
 
-
-background-image {
-    opacity: 0;
-    transition: opacity 1s ease 1s;
-}
-
-
 .Main:hover {
     background-color: var(--hover-color);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: 100%;
     animation: blur 2s ease 0s;
     -webkit-animation: blur 2s ease 0s;
     -moz-animation: blur 2s ease 0s;
-    /* background-image: url("/index v2/assets/icon/smile-bg.png"); */
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
 }
 
 
@@ -291,6 +283,26 @@ background-image {
         -moz-filter: blur(50px);
         -o-filter: blur(50px);
         -ms-filter: blur(50px);
+    }
+}
+
+Main:hover {
+    opacity: 0;
+    transition: opacity 1s ease 1s;
+    background-image: url("/index v2/assets/icon/smile-bg.png");
+}
+
+@keyframes background-image {
+    0% {
+        background-image: none;
+    }
+
+    90% {
+        background-image: none;
+    }
+
+    50% {
+        background-image: url("/index v2/assets/icon/smile-bg.png");
     }
 }
 

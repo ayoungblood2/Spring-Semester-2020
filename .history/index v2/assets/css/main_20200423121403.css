@@ -257,45 +257,41 @@ br {
     line-height: .5;
 }
 
-
-background-image {
-    opacity: 0;
-    transition: opacity 1s ease 1s;
-}
-
-
 .Main:hover {
     background-color: var(--hover-color);
-    animation: blur 2s ease 0s;
-    -webkit-animation: blur 2s ease 0s;
-    -moz-animation: blur 2s ease 0s;
-    /* background-image: url("/index v2/assets/icon/smile-bg.png"); */
-    background-size: 100%;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
+    background-size: 100%;
+    animation: blur 2s ease 0s;
+  -webkit-animation: blur 2s ease 0s;
+  -moz-animation: blur 2s ease 0s;
 }
 
 
 @keyframes blur {
-
     0%,
     90% {
-        -webkit-filter: blur(0px);
-        -moz-filter: blur(0px);
-        -o-filter: blur(0px);
-        -ms-filter: blur(0px);
+      -webkit-filter: blur(0px);
+      -moz-filter: blur(0px);
+      -o-filter: blur(0px);
+      -ms-filter: blur(0px);
     }
-
     50% {
-        -webkit-filter: blur(50px);
-        -moz-filter: blur(50px);
-        -o-filter: blur(50px);
-        -ms-filter: blur(50px);
+      -webkit-filter: blur(50px);
+      -moz-filter: blur(50px);
+      -o-filter: blur(50px);
+      -ms-filter: blur(50px);
     }
-}
+  }
 
+  body:hover{
+      opacity: 0;
+    transition: opacity 1s ease 1s;
+    background-image: url("/index v2/assets/icon/smile-bg.png");
+  }
+  
 
-
+  
 .Header {
     flex: 0 0 25%;
     display: flex;
@@ -308,7 +304,7 @@ background-image {
     padding: 1;
     background-color: var(--secondary-color);
     overflow-y: scroll;
-
+   
 }
 
 .Header::-webkit-scrollbar {
@@ -541,8 +537,8 @@ background-image {
         flex: 0 0 100%;
         height: auto;
         position: -webkit-sticky;
-        position: sticky;
-        top: 0;
+    position: sticky;
+    top: 0;
     }
 }
 

@@ -257,22 +257,11 @@ br {
     line-height: .5;
 }
 
-
-background-image {
-    opacity: 0;
-    transition: opacity 1s ease 1s;
-}
-
-
 .Main:hover {
     background-color: var(--hover-color);
     animation: blur 2s ease 0s;
     -webkit-animation: blur 2s ease 0s;
     -moz-animation: blur 2s ease 0s;
-    /* background-image: url("/index v2/assets/icon/smile-bg.png"); */
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
 }
 
 
@@ -292,6 +281,16 @@ background-image {
         -o-filter: blur(50px);
         -ms-filter: blur(50px);
     }
+}
+
+Main:hover {
+    opacity: 0;
+    transition: opacity 1s ease 1s;
+    background-image: url("/index v2/assets/icon/smile-bg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+  
 }
 
 

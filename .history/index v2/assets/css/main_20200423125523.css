@@ -269,7 +269,7 @@ background-image {
     animation: blur 2s ease 0s;
     -webkit-animation: blur 2s ease 0s;
     -moz-animation: blur 2s ease 0s;
-    /* background-image: url("/index v2/assets/icon/smile-bg.png"); */
+    background-image: url("/index v2/assets/icon/smile-bg.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
