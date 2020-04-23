@@ -278,7 +278,6 @@ br {
     animation: blur 2s ease 0s;
   -webkit-animation: blur 2s ease 0s;
   -moz-animation: blur 2s ease 0s;
-  z-index:1;
 }
 
 

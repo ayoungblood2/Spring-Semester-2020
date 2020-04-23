@@ -271,7 +271,7 @@ br {
 .body:hover {
     background-color: var(--hover-color);
     background-image: url("index v2/assets/icon/click&explore-bg.png");
-    position: absolute;
+    position: fixed;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-size: 100%;

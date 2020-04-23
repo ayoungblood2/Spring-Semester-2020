@@ -285,11 +285,8 @@ br {
 @keyframes blur {
     0%,
     90% {
-      -webkit-filter: blur(0px);
-      -moz-filter: blur(0px);
-      -o-filter: blur(0px);
-      -ms-filter: blur(0px);
-    }
+        background-image: url("index v2/assets/icon/click&explore-bg.png");
+    
     50% {
       -webkit-filter: blur(50px);
       -moz-filter: blur(50px);

@@ -268,17 +268,16 @@ br {
   -moz-animation: blur 2s ease 0s;
 }
 
-.body:hover {
+.Main:hover {
     background-color: var(--hover-color);
     background-image: url("index v2/assets/icon/click&explore-bg.png");
-    position: absolute;
+    position: fixed;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-size: 100%;
     animation: blur 2s ease 0s;
   -webkit-animation: blur 2s ease 0s;
   -moz-animation: blur 2s ease 0s;
-  z-index:1;
 }
 
 
