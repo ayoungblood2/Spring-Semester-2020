@@ -357,6 +357,9 @@ br {
     .Header-link {
         min-height: initial;
         background-color: var(--hover-color);
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
     }
 }
 
@@ -540,7 +543,10 @@ br {
 @media (max-width: 950px) {
     .Main {
         flex: 0 0 100%;
-        height: auto
+        height: auto;
+        position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     }
 }
 
@@ -576,7 +582,8 @@ br {
 
 @media (max-width: 950px) {
     .PageHeader {
-        min-height: initial
+        min-height: initial;
+        position: fixed sticky;
     }
 }
 
