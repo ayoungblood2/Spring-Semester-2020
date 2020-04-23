@@ -720,7 +720,7 @@ background-image {
     margin: 1;
     grid-gap: var(--xsm-padding);
     padding: var(--xsm-padding);
-    max-height: 46vmax;
+    max-height: 45vmax;
     overflow-y: scroll;
 }
 
