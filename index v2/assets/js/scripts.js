@@ -24,7 +24,36 @@ var images = [
     "/index v2/classes/core/project1/Iterate_Print_Cat_BW.png",
     "/index v2/classes/core/project1/Literal_Hannah_Printed_BW.png",
     "/index v2/classes/core/project1/Meta_Photo_Cat_BW.png",
-    "/index v2/classes/core/project1/Oxymoron_Print_Mao_BW.png"
+    "/index v2/classes/core/project1/Oxymoron_Print_Mao_BW.png",
+  ]
+
+  var images2 = [
+    "/index v2/classes/core/project1/book/cover2-color.png",
+    "/index v2/classes/core/project1/book/gif/24words-v1.gif",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview55.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview2.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview3.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview4.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview5.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview6.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview7.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview8.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview9.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview10.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview11.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview12.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview13.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview14.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview15.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview16.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview17.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview18.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview19.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview20.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview21.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview40.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview40.jpg",
+    "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview41.jpg",
   ]
   
   var step = 0;
@@ -34,7 +63,19 @@ var images = [
     if (!images.length) return; // images.length is number of items in array (should be 4)
 
     document.getElementById('imgClickAndChange').src = images[step];
-  
+
     step++;
     if (step == images.length) step = 0;
+  }
+  
+  var step2 = 0;
+  changeImage2(); // set first image src after page loads
+
+  function changeImage2() {
+    if (!images2.length) return; // images.length is number of items in array (should be 4)
+
+    document.getElementById('imgClickAndChange2').src = images2[step2];
+
+    step2++;
+    if (step2 == images2.length) step2 = 0;
   }

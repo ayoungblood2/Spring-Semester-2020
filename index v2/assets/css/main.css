@@ -266,9 +266,9 @@ background-image {
 
 .Main:hover {
     background-color: var(--hover-color);
-    animation: blur 2s ease 0s;
+    /* animation: blur 2s ease 0s;
     -webkit-animation: blur 2s ease 0s;
-    -moz-animation: blur 2s ease 0s;
+    -moz-animation: blur 2s ease 0s; */
     /* background-image: url("/index v2/assets/icon/smile-bg.png"); */
     background-size: 100%;
     background-repeat: no-repeat;
@@ -707,6 +707,8 @@ background-image {
     display: grid;
     grid-template-columns: auto auto auto;
     border: var(--thin-border);
+    margin-bottom: var(--md-padding);
+   
 }
 
 .grid-container-3 {
@@ -719,9 +721,12 @@ background-image {
     font-family: var(--tertiary-font-family);
     margin: 1;
     grid-gap: var(--xsm-padding);
-    padding: var(--xsm-padding);
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-top: var(--sm-padding);
     max-height: 88%;
     overflow-y: scroll;
+    top: 0;
 }
 
 
