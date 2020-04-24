@@ -26,7 +26,7 @@ var images = [
     "/index v2/classes/core/project1/Meta_Photo_Cat_BW.png",
     "/index v2/classes/core/project1/Oxymoron_Print_Mao_BW.png",
   ]
-  
+
   var images2 = [
     "/index v2/classes/core/project1/book/cover2-color.png",
     "/index v2/classes/core/project1/book/gif/24words-v1.gif",
@@ -58,7 +58,6 @@ var images = [
   
   var step = 0;
   changeImage(); // set first image src after page loads
-  changeImage2(); 
   
   function changeImage() {
     if (!images.length) return; // images.length is number of items in array (should be 4)
@@ -69,16 +68,14 @@ var images = [
     if (step == images.length) step = 0;
   }
   
-
-
-
-  // set first image src after page loads
+  var step2 = 0;
+  changeImage2(); // set first image src after page loads
 
   function changeImage2() {
     if (!images2.length) return; // images.length is number of items in array (should be 4)
 
-    document.getElementById('imgClickAndChange2').src = images2[step];
+    document.getElementById('imgClickAndChange2').src = images2[step2];
 
-    step++;
-    if (step == images2.length) step = 0;
+    step2++;
+    if (step2 == images2.length) step2 = 0;
   }

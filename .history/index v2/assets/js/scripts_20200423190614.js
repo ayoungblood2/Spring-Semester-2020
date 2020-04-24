@@ -27,6 +27,19 @@ var images = [
     "/index v2/classes/core/project1/Oxymoron_Print_Mao_BW.png",
   ]
   
+  
+  var step = 0;
+  changeImage(); // set first image src after page loads
+  
+  function changeImage() {
+    if (!images.length) return; // images.length is number of items in array (should be 4)
+
+    document.getElementById('imgClickAndChange').src = images[step];
+
+    step++;
+    if (step == images.length) step = 0;
+  }
+  
   var images2 = [
     "/index v2/classes/core/project1/book/cover2-color.png",
     "/index v2/classes/core/project1/book/gif/24words-v1.gif",
@@ -55,24 +68,9 @@ var images = [
     "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview40.jpg",
     "/index v2/classes/core/project1/finals/spreads/word-book-finalreviews-preview41.jpg",
   ]
-  
+
   var step = 0;
-  changeImage(); // set first image src after page loads
-  changeImage2(); 
-  
-  function changeImage() {
-    if (!images.length) return; // images.length is number of items in array (should be 4)
-
-    document.getElementById('imgClickAndChange').src = images[step];
-
-    step++;
-    if (step == images.length) step = 0;
-  }
-  
-
-
-
-  // set first image src after page loads
+  changeImage2(); // set first image src after page loads
 
   function changeImage2() {
     if (!images2.length) return; // images.length is number of items in array (should be 4)

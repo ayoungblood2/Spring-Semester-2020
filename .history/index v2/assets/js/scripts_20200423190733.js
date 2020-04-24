@@ -58,7 +58,6 @@ var images = [
   
   var step = 0;
   changeImage(); // set first image src after page loads
-  changeImage2(); 
   
   function changeImage() {
     if (!images.length) return; // images.length is number of items in array (should be 4)
@@ -72,7 +71,7 @@ var images = [
 
 
 
-  // set first image src after page loads
+  changeImage2(); // set first image src after page loads
 
   function changeImage2() {
     if (!images2.length) return; // images.length is number of items in array (should be 4)
