@@ -27,7 +27,7 @@ var images = [
     "/index v2/classes/core/project1/Oxymoron_Print_Mao_BW.png",
   ]
   
-  var image = [
+  var images2 = [
     "/index v2/classes/core/project1/book/cover2-color.png",
     "/index v2/classes/core/project1/book/gif/24words-v1.gif",
     "/index v2/classes/core/project1/Avery_Portmanteu_BW.png",
@@ -76,10 +76,10 @@ var images = [
   // set first image src after page loads
 
   function changeImageTwo() {
-    if (!image.length) return; // images.length is number of items in array (should be 4)
+    if (!images2.length) return; // images.length is number of items in array (should be 4)
 
-    document.getElementById('imgClickAndChangeTwo').src = image[step];
+    document.getElementById('imgClickAndChangeTwo').src = images2[step];
 
     step++;
-    if (step == image.length) step = 0;
+    if (step == images2.length) step = 0;
   }

@@ -724,7 +724,7 @@ background-image {
     padding-left: 15rem;
     padding-right: 15rem;
     padding-top: var(--xsm-padding);
-    max-height: 100%;
+    max-height: 98%;
     overflow-y: scroll;
     top: 0;
 }
