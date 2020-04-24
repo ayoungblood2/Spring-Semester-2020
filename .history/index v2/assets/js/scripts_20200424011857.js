@@ -68,6 +68,7 @@ var images = [
     step++;
     if (step == images.length) step = 0;
   }
+  
 
   changeImage2();
 

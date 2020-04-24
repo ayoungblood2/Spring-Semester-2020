@@ -68,7 +68,8 @@ var images = [
     step++;
     if (step == images.length) step = 0;
   }
-
+  
+  var step = 0;
   changeImage2();
 
   // set first image src after page loads
